@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 import pacote.cadastrandoclientes.Janelas.AdicionarCliente;
 import pacote.cadastrandoclientes.Janelas.Relatorio;
-import pacote.cadastrandoclientes.Janelas.GerarPdf;
+import pacote.cadastrandoclientes.Janelas.PDF;
 
 import javax.swing.*;
 
@@ -77,7 +77,7 @@ public class CadastrandoClientes{
                 Conexao conexao = new Conexao();
                 String dados = conexao.puxarDadosMysql();
                 
-                GerarPdf pdf = new GerarPdf(dados);
+                PDF.gerarPDF(dados);
             }
             
         });

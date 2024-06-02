@@ -24,7 +24,7 @@ public class Relatorio extends JFrame{
                 Conexao conexao = new Conexao();
                 String dados = conexao.puxarDadosMysql();
                 
-                GerarPdf pdf = new GerarPdf(dados);
+                PDF.gerarPDF(dados);
             }
             
         });

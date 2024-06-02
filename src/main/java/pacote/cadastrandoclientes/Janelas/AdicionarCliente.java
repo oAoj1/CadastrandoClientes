@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import pacote.cadastrandoclientes.Conexao;
 
-public class AdicionarCliente extends JFrame{
+public class AdicionarCliente extends JFrame {
     
-    public AdicionarCliente(){
+    public AdicionarCliente() {
         
         /* PAINEL */ 
         
@@ -77,7 +77,7 @@ public class AdicionarCliente extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e){
                 Conexao conexao = new Conexao();
-                conexao.cadastrandoCliente(inputNome.getText(), inputSobreNome.getText(),inputEmail.getText());
+                conexao.cadastrandoCliente(inputNome.getText(), inputSobreNome.getText(), inputEmail.getText());
             }  
             
         });
